@@ -2,18 +2,30 @@
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
 
-## Environment Prepare
+## Create Project Steps
 
-Install `node_modules`:
+### 1.Install frame
+
+```bash
+npm create umi
+```
+
+or 
+
+```bash
+yarn create umi
+```
+
+### 2.Install node modules
 
 ```bash
 npm install
 ```
 
-or
+### 3.Start Project
 
 ```bash
-yarn
+npm start
 ```
 
 ## Provided Scripts
