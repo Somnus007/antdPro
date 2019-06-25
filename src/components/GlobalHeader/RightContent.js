@@ -1,10 +1,10 @@
 import { Icon, Tooltip } from 'antd';
-import Avatar from './AvatarDropdown';
-import HeaderSearch from '../HeaderSearch';
 import React from 'react';
-import SelectLang from '../SelectLang';
 import { connect } from 'dva';
 import { formatMessage } from 'umi-plugin-react/locale';
+import Avatar from './AvatarDropdown';
+import HeaderSearch from '../HeaderSearch';
+import SelectLang from '../SelectLang';
 import styles from './index.less';
 
 const GlobalHeaderRight = props => {

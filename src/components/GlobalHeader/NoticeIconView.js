@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Tag, message } from 'antd';
-import NoticeIcon from '../NoticeIcon';
 import { connect } from 'dva';
 import { formatMessage } from 'umi-plugin-react/locale';
 import groupBy from 'lodash/groupBy';
 import moment from 'moment';
+import NoticeIcon from '../NoticeIcon';
 import styles from './index.less';
 
 class GlobalHeaderRight extends Component {
@@ -29,6 +29,7 @@ class GlobalHeaderRight extends Component {
       });
     }
   };
+
   handleNoticeClear = (title, key) => {
     const { dispatch } = this.props;
     message.success(
@@ -44,6 +45,7 @@ class GlobalHeaderRight extends Component {
       });
     }
   };
+
   getNoticeData = () => {
     const { notices = [] } = this.props;
 
@@ -85,6 +87,7 @@ class GlobalHeaderRight extends Component {
     });
     return groupBy(newNotices, 'type');
   };
+
   getUnreadData = noticeData => {
     const unreadMsg = {};
     Object.keys(noticeData).forEach(key => {
